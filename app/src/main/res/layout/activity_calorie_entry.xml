@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_calendar"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CalorieEntryActivity">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightGreen"
+        android:text="Back"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvCalorieEntryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calorie Entry"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Food Name" />
+
+    <EditText
+        android:id="@+id/etCalories"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Calories"
+        android:inputType="numberDecimal" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="370dp"
+        android:layout_height="390dp" />
+
+    <Button
+        android:id="@+id/btnSaveCalories"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/lightGreen"
+        android:text="Save Calories"
+        android:textColor="@color/black" />
+</LinearLayout>
